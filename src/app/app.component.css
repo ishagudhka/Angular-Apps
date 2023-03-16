@@ -1,0 +1,12 @@
+.highlight {
+  color: blue;
+  display: block;
+  height: 20px;
+  font-weight: 800;
+}
+.elipsis {
+  text-overflow: ellipsis;
+  color: red;
+  white-space: nowrap;
+  overflow: hidden;
+}

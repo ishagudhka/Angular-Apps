@@ -1,0 +1,21 @@
+<p>App component</p>
+<p>Send data to users component on clicking below button</p>
+<button (click)="sendData()">Click me</button>
+<div *ngIf="isVisible">
+  <h2>I am Parent</h2>
+  <p #chose>Choose colors</p>
+  <app-child [data]="childData" #child>
+    <p #para1>Inside child</p>
+  </app-child>
+
+  <p highlight>Testing background custom attribute directive</p>
+
+  <p MouseHover>Testing Mouse attribute directive</p>
+
+  <p appElipsis>
+    Hi I am very big paraghraph and I want to test ... elipsis feature I want to
+    becom a very big paragraph
+  </p>
+  <p>{{ para | elipsis: 100 }}</p>
+</div>
+<app-user> </app-user>
